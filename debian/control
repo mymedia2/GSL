@@ -1,0 +1,23 @@
+Source: microsoft-gsl
+Section: libdevel
+Priority: optional
+Maintainer: Nicholas Guriev <guriev-ns@ya.ru>
+Build-Depends: cmake (>=2.8.7),
+               debhelper (>=9),
+               libunittest++-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/Microsoft/GSL
+
+Package: libmicrosoft-gsl-dev
+Architecture: all
+Depends: ${misc:Depends}
+Description: Microsoft Guidelines Support Library
+ The Guideline Support Library (GSL) contains functions and types that are
+ suggested for use by the C++ Core Guidelines maintained by the Standard C++
+ Foundation. This package contains Microsoft's implementation of GSL.
+ .
+ The library includes types like span<T>, string_span, owner<> and others.
+ .
+ The entire implementation is provided inline in the headers under the gsl
+ directory. The implementation generally assumes a platform that implements
+ C++14 support.

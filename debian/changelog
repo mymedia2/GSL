@@ -1,0 +1,5 @@
+microsoft-gsl (0.1~2017.03.20~git16a6a41-1) unstable; urgency=low
+
+  * Initial upload (closes: #859221)
+
+ -- Nicholas Guriev <guriev-ns@ya.ru>  Thu, 30 Mar 2017 20:11:55 +0300
