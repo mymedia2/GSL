@@ -1,4 +1,4 @@
-microsoft-gsl (0.1~2017.03.20~git16a6a41-1) unstable; urgency=low
+ms-gsl (0~git20170320.16a6a41-1) unstable; urgency=low
 
   * Initial upload (closes: #859221)
 

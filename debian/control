@@ -1,4 +1,4 @@
-Source: microsoft-gsl
+Source: ms-gsl
 Section: libdevel
 Priority: optional
 Maintainer: Nicholas Guriev <guriev-ns@ya.ru>
@@ -8,7 +8,7 @@ Build-Depends: cmake (>=2.8.7),
 Standards-Version: 3.9.8
 Homepage: https://github.com/Microsoft/GSL
 
-Package: libmicrosoft-gsl-dev
+Package: libmsgsl-dev
 Architecture: all
 Depends: ${misc:Depends}
 Description: Microsoft Guidelines Support Library

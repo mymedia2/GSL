@@ -2,9 +2,10 @@ Description: Fix paths to UnitTest framework
 Author: Nicholas Guriev <guriev-ns@ya.ru>
 Last-Update: 2017-03-30
 
---- microsoft-gsl-0.1~git16a6a41.orig/tests/CMakeLists.txt
-+++ microsoft-gsl-0.1~git16a6a41/tests/CMakeLists.txt
-@@ -6,8 +6,6 @@ if (NOT EXISTS ${CMAKE_CURRENT_SOURCE_DI
+diff --git a/tests/CMakeLists.txt b/tests/CMakeLists.txt
+--- a/tests/CMakeLists.txt
++++ b/tests/CMakeLists.txt
+@@ -6,8 +6,6 @@
      execute_process(COMMAND git submodule update --init WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
  endif()
  
@@ -13,8 +14,9 @@ Last-Update: 2017-03-30
  include_directories(
      ../include
      ./unittest-cpp
---- microsoft-gsl-0.1~git16a6a41.orig/tests/algorithm_tests.cpp
-+++ microsoft-gsl-0.1~git16a6a41/tests/algorithm_tests.cpp
+diff --git a/tests/algorithm_tests.cpp b/tests/algorithm_tests.cpp
+--- a/tests/algorithm_tests.cpp
++++ b/tests/algorithm_tests.cpp
 @@ -14,7 +14,7 @@
  //
  ///////////////////////////////////////////////////////////////////////////////
@@ -24,8 +26,9 @@ Last-Update: 2017-03-30
  #include <gsl/gsl_algorithm>
  
  #include <array>
---- microsoft-gsl-0.1~git16a6a41.orig/tests/assertion_tests.cpp
-+++ microsoft-gsl-0.1~git16a6a41/tests/assertion_tests.cpp
+diff --git a/tests/assertion_tests.cpp b/tests/assertion_tests.cpp
+--- a/tests/assertion_tests.cpp
++++ b/tests/assertion_tests.cpp
 @@ -14,7 +14,7 @@
  // 
  ///////////////////////////////////////////////////////////////////////////////
@@ -35,8 +38,9 @@ Last-Update: 2017-03-30
  #include <gsl/gsl>
  
  using namespace gsl;
---- microsoft-gsl-0.1~git16a6a41.orig/tests/at_tests.cpp
-+++ microsoft-gsl-0.1~git16a6a41/tests/at_tests.cpp
+diff --git a/tests/at_tests.cpp b/tests/at_tests.cpp
+--- a/tests/at_tests.cpp
++++ b/tests/at_tests.cpp
 @@ -14,7 +14,7 @@
  // 
  ///////////////////////////////////////////////////////////////////////////////
@@ -46,8 +50,9 @@ Last-Update: 2017-03-30
  #include <gsl/gsl>
  #include <vector>
  #include <initializer_list>
---- microsoft-gsl-0.1~git16a6a41.orig/tests/bounds_tests.cpp
-+++ microsoft-gsl-0.1~git16a6a41/tests/bounds_tests.cpp
+diff --git a/tests/bounds_tests.cpp b/tests/bounds_tests.cpp
+--- a/tests/bounds_tests.cpp
++++ b/tests/bounds_tests.cpp
 @@ -14,7 +14,7 @@
  //
  ///////////////////////////////////////////////////////////////////////////////
@@ -57,8 +62,9 @@ Last-Update: 2017-03-30
  #include <gsl/multi_span>
  #include <vector>
  
---- microsoft-gsl-0.1~git16a6a41.orig/tests/byte_tests.cpp
-+++ microsoft-gsl-0.1~git16a6a41/tests/byte_tests.cpp
+diff --git a/tests/byte_tests.cpp b/tests/byte_tests.cpp
+--- a/tests/byte_tests.cpp
++++ b/tests/byte_tests.cpp
 @@ -14,7 +14,7 @@
  //
  ///////////////////////////////////////////////////////////////////////////////
@@ -68,8 +74,9 @@ Last-Update: 2017-03-30
  #include <gsl/gsl_byte>
  
  #include <iostream>
---- microsoft-gsl-0.1~git16a6a41.orig/tests/multi_span_tests.cpp
-+++ microsoft-gsl-0.1~git16a6a41/tests/multi_span_tests.cpp
+diff --git a/tests/multi_span_tests.cpp b/tests/multi_span_tests.cpp
+--- a/tests/multi_span_tests.cpp
++++ b/tests/multi_span_tests.cpp
 @@ -14,7 +14,7 @@
  //
  ///////////////////////////////////////////////////////////////////////////////
@@ -79,8 +86,9 @@ Last-Update: 2017-03-30
  #include <gsl/multi_span>
  
  #include <iostream>
---- microsoft-gsl-0.1~git16a6a41.orig/tests/notnull_tests.cpp
-+++ microsoft-gsl-0.1~git16a6a41/tests/notnull_tests.cpp
+diff --git a/tests/notnull_tests.cpp b/tests/notnull_tests.cpp
+--- a/tests/notnull_tests.cpp
++++ b/tests/notnull_tests.cpp
 @@ -14,7 +14,7 @@
  // 
  ///////////////////////////////////////////////////////////////////////////////
@@ -90,8 +98,9 @@ Last-Update: 2017-03-30
  #include <gsl/gsl>
  #include <vector>
  
---- microsoft-gsl-0.1~git16a6a41.orig/tests/owner_tests.cpp
-+++ microsoft-gsl-0.1~git16a6a41/tests/owner_tests.cpp
+diff --git a/tests/owner_tests.cpp b/tests/owner_tests.cpp
+--- a/tests/owner_tests.cpp
++++ b/tests/owner_tests.cpp
 @@ -14,7 +14,7 @@
  // 
  ///////////////////////////////////////////////////////////////////////////////
@@ -101,8 +110,9 @@ Last-Update: 2017-03-30
  #include <gsl/gsl>
  #include <functional>
  
---- microsoft-gsl-0.1~git16a6a41.orig/tests/span_tests.cpp
-+++ microsoft-gsl-0.1~git16a6a41/tests/span_tests.cpp
+diff --git a/tests/span_tests.cpp b/tests/span_tests.cpp
+--- a/tests/span_tests.cpp
++++ b/tests/span_tests.cpp
 @@ -14,7 +14,7 @@
  //
  ///////////////////////////////////////////////////////////////////////////////
@@ -112,8 +122,9 @@ Last-Update: 2017-03-30
  #include <gsl/span>
  
  #include <iostream>
---- microsoft-gsl-0.1~git16a6a41.orig/tests/strided_span_tests.cpp
-+++ microsoft-gsl-0.1~git16a6a41/tests/strided_span_tests.cpp
+diff --git a/tests/strided_span_tests.cpp b/tests/strided_span_tests.cpp
+--- a/tests/strided_span_tests.cpp
++++ b/tests/strided_span_tests.cpp
 @@ -14,7 +14,7 @@
  //
  ///////////////////////////////////////////////////////////////////////////////
@@ -123,8 +134,9 @@ Last-Update: 2017-03-30
  #include <gsl/multi_span>
  
  #include <string>
---- microsoft-gsl-0.1~git16a6a41.orig/tests/string_span_tests.cpp
-+++ microsoft-gsl-0.1~git16a6a41/tests/string_span_tests.cpp
+diff --git a/tests/string_span_tests.cpp b/tests/string_span_tests.cpp
+--- a/tests/string_span_tests.cpp
++++ b/tests/string_span_tests.cpp
 @@ -14,7 +14,7 @@
  //
  ///////////////////////////////////////////////////////////////////////////////
@@ -134,8 +146,9 @@ Last-Update: 2017-03-30
  #include <cstdlib>
  #include <gsl/string_span>
  #include <vector>
---- microsoft-gsl-0.1~git16a6a41.orig/tests/utils_tests.cpp
-+++ microsoft-gsl-0.1~git16a6a41/tests/utils_tests.cpp
+diff --git a/tests/utils_tests.cpp b/tests/utils_tests.cpp
+--- a/tests/utils_tests.cpp
++++ b/tests/utils_tests.cpp
 @@ -14,7 +14,7 @@
  //
  ///////////////////////////////////////////////////////////////////////////////
