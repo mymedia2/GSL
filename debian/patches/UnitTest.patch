@@ -1,6 +1,8 @@
 Description: Fix paths to UnitTest framework
+ In libunittest++ debian package others paths are.
+Forwarded: not-needed
 Author: Nicholas Guriev <guriev-ns@ya.ru>
-Last-Update: 2017-03-30
+Last-Update: 2017-04-07
 
 diff --git a/tests/CMakeLists.txt b/tests/CMakeLists.txt
 --- a/tests/CMakeLists.txt
@@ -42,11 +44,11 @@ diff --git a/tests/at_tests.cpp b/tests/at_tests.cpp
 --- a/tests/at_tests.cpp
 +++ b/tests/at_tests.cpp
 @@ -14,7 +14,7 @@
- // 
+ //
  ///////////////////////////////////////////////////////////////////////////////
  
--#include <UnitTest++/UnitTest++.h> 
-+#include <unittest++/UnitTest++.h> 
+-#include <UnitTest++/UnitTest++.h>
++#include <unittest++/UnitTest++.h>
  #include <gsl/gsl>
  #include <vector>
  #include <initializer_list>
@@ -145,7 +147,7 @@ diff --git a/tests/string_span_tests.cpp b/tests/string_span_tests.cpp
 +#include <unittest++/UnitTest++.h>
  #include <cstdlib>
  #include <gsl/string_span>
- #include <vector>
+ #include <gsl/gsl> //owner
 diff --git a/tests/utils_tests.cpp b/tests/utils_tests.cpp
 --- a/tests/utils_tests.cpp
 +++ b/tests/utils_tests.cpp
