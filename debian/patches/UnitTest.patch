@@ -1,5 +1,5 @@
 Description: Fix paths to UnitTest framework
- In libunittest++ debian package others paths are.
+ In the libunittest++ debian package the paths are different.
 Forwarded: not-needed
 Author: Nicholas Guriev <guriev-ns@ya.ru>
 Last-Update: 2017-04-07
