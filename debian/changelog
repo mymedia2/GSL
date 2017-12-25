@@ -1,3 +1,9 @@
+ms-gsl (0~git20170403.ebab8ca-1ppa1) xenial; urgency=low
+
+  * Launchpad upload
+
+ -- Nicholas Guriev <guriev-ns@ya.ru>  Sun, 23 Apr 2017 22:13:25 +0300
+
 ms-gsl (0~git20170403.ebab8ca-1) unstable; urgency=low
 
   * Initial upload (closes: #859221)
