@@ -3,7 +3,7 @@ Section: libdevel
 Priority: optional
 Maintainer: Nicholas Guriev <guriev-ns@ya.ru>
 Build-Depends: cmake (>=2.8.7),
-               debhelper (>=10),
+               debhelper (>=9),
                libunittest++-dev
 Standards-Version: 3.9.8
 Homepage: https://github.com/Microsoft/GSL

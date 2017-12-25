@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@
+	dh $@ --parallel
 
 # Upstream does not provide a tarball
 get-orig-source:
